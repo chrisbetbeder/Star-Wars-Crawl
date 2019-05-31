@@ -1,0 +1,65 @@
+body{
+    background-image: url("cieletoile.jpg");
+    background-repeat: no repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#container{
+   width: 500px;
+   height: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+
+#div2{
+    transform: perspective(300px) rotateX(35deg) translateY(70%);
+    webkit-transform: rotateX(35deg) perspective(300px) translateY(250%);
+    color: #feca57;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    -webkit-animation: mymove 400000ms ease-in-out infinite;
+    animation: mymove 40000ms linear infinite;
+    position: relative;
+}
+
+.photobecode{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@keyframes mymove {
+    from {transform: perspective(300px) rotateX(35deg) translateY(70%);
+    webkit-transform: rotateX(35deg) perspective(300px) translateY(250%);
+    }
+    
+    to {transform: perspective(300px) rotateX(35deg) translateY(-70%);
+    webkit-transform: rotateX(35deg) perspective(300px) translateY(-250%);
+    }
+}
+/*the animation code*/
+@-webkit-keyframes mymove {
+      from {bottom: O%;
+            height: -200%}
+            
+      to {top: 200px;
+         height: 100%}
+}
+
+h1{
+    color: blue;
+    
+}
+/* -webkit-animation-duration: infinite;
+    -moz-animation-name: direction texte;
+    -moz-animation-duration: infinite;
+    -o-animation-name: direction texte;
+    -o-animation-duration: infinite;
+    animation-name: direction texte;
+    animation-duration: infinite;*/
